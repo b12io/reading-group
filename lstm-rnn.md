@@ -24,7 +24,7 @@ Normally we read papers, but we wanted a more accessible introduction to neural 
 
 # Things that went unanswered
 * What's the best way to learn about how training/forward/backpropagation works?
-
+* In an RNN, it seems like you can either add more hidden state to one layer or add another layer. How do you decide which to do?  In the code linked below, it seems like large networks have around 3 layers and 700 units per layer. What does hyperparameter search look like in this world?
 
 # Questions for B12 to ponder
 * How can we use this to classify text/imagery?
