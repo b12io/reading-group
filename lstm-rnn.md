@@ -31,7 +31,7 @@ Normally we read papers, but we wanted a more accessible introduction to neural 
 
 
 # 3 Takeaways
-* RNNs are cool because you can takein a variable amount of sequenced input without feature engineering, and emit a variable amount of sequenced output.
+* RNNs are cool because you can take in a variable amount of sequenced input without feature engineering, and emit a variable amount of sequenced output.
 * The core trick in RNNs is to combine the latest input with some state that they self-update, giving them a sense of history.
 * LSTMs are RNNs with internal architectures that help them learn from sequences with longer history.
 
