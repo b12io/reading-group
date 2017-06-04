@@ -1,5 +1,5 @@
 
-# Adam questions
+## Adam questions
 * I'd like to understand depth more. Is it just stacking all of the different filters together?
 * What's the relationship between depth and interconnectedness? Do you only pool per filter, rather than along filter boundaries?
 * Are filters that different from features in traditional ML?
