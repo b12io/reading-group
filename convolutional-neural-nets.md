@@ -1,3 +1,14 @@
+## Nazar's crappy notes:
+
+* CNNs are designed to recognize images (whereas RNNs are designed for sequences), but can be used for other data types
+* Basic unit of CNN is a feature - small chunk of image data
+* CNN efficiency depends on num. of features, their size, weights of layers
+* speed depends on input size, scales linearly
+* Layers:
+	* convolution (multiplying feature to the part of the image)
+	* relu: Rectified Linear Units
+	* pooling (resizing)
+* Backpropagation to assign weights to layers
 
 ## Adam questions
 * I'd like to understand depth more. Is it just stacking all of the different filters together?
