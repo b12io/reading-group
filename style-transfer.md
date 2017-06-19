@@ -1,7 +1,8 @@
 # Reading
-[A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
+[A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) by
+Leon A. Gatys, Alexander S. Ecker and Matthias Bethge
 
-# Questions I have going in
+# Questions I had before reading the paper
 * How did they model “style” of an image so that they can learn the style and
 transfer it from one image to another?
 
@@ -14,7 +15,7 @@ perform gradient descent on a white-noise image until content loss function
 
 # Notes
 * content reconstruction vs. style reconstruction
-* results generated on the basis of the VGG-Network, didn’t used FC layers
+* results generated on the basis of the VGG-Network, didn’t use FC layers
 * replacing max-pooling with average pooling gave slightly more appealing
 results
 * to perform content reconstruction, perform gradient descent on a white noise
@@ -25,7 +26,13 @@ image
 * Gram matrix and derivative notation was not fully defined, so I’m not sure
 what i, j, k represent
 * Is gradient 0 if value is negative because they use ReLU?
-* Multiple images will generate similar feature maps at higher levels of the
-CNN. Multiple images will generate similar style representations
+* Is the assumption (for the algorithm to work) that multiple images can
+generate similar feature maps at higher levels of the CNN? And that multiple
+images can generate similar style representations?
 
 # Discussion Questions
+* Did the algorithm differ from what you expected?
+* Why are feature correlations representative of style?
+* How might we improve on this alogrithm?
+* Performance: how long would it take to compute style transfer?
+* How can we appply style transfer at B12?
