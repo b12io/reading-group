@@ -33,6 +33,6 @@ images can generate similar style representations?
 # Discussion Questions
 * Did the algorithm differ from what you expected?
 * Why are feature correlations representative of style?
-* How might we improve on this alogrithm?
+* How might we improve on this algorithm?
 * Performance: how long would it take to compute style transfer?
 * How can we appply style transfer at B12?
