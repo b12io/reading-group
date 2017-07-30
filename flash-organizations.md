@@ -7,6 +7,7 @@ Fellow B12er [Daniela Retelny](http://danielaretelny.com/)'s final chapter of he
 * How does promotion work? Is there a notion of demotion? What does it look like when the task you are working on gets "refactored?"
 * What does a branch/merge conflict look like in a running organization?
 * How does leadership/expertise come into play? A Tech Lead leads a team of engineers, but does Foundry help in determining who the Tech Lead should be?
+* How much did each of the Flash Organizations cost in terms of human labor? How would this compare to hiring a small agency to solve the problem?
 
 # 3 Takeaways
 * Flash Organizations are role-based (e.g., movie crews) rather than asset-specific (i.e., requiring Jane on a particular team) to facilitate fast hiring based on skills/roles.
