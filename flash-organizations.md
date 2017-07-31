@@ -2,12 +2,12 @@
 Fellow B12er [Daniela Retelny](http://danielaretelny.com/)'s final chapter of her thesis is on [Flash Organizations](http://hci.stanford.edu/publications/2017/flashorgs/flash-orgs-chi-2017.pdf). We read her and her collaborators' CHI paper on the topic.
 
 # Questions I have going in
-* How much structure comes from the initial scaffold laid down by the person forming the organization, and how much comes from forks/teams?
-* How much fluidity in membership does this model see vs. traditional organizations and vs. Flash Teams?
-* How does promotion work? Is there a notion of demotion? What does it look like when the task you are working on gets "refactored?"
-* What does a branch/merge conflict look like in a running organization?
-* How does leadership/expertise come into play? A Tech Lead leads a team of engineers, but does Foundry help in determining who the Tech Lead should be?
-* How much did each of the Flash Organizations cost in terms of human labor? How would this compare to hiring a small agency to solve the problem?
+* How much structure comes from the initial scaffold laid down by the person forming the organization, and how much comes from forks/teams? *a lot changed---566 branches, lots of help from hired team leads*
+* How much fluidity in membership does this model see vs. traditional organizations and vs. Flash Teams? *way more churn than traditional organizations---not necessarily a benefit for a company, but good for a project. Would be cool to see hybrid organization or restructured organization from internal company team members.*
+* How does promotion work? Is there a notion of demotion? What does it look like when the task you are working on gets "refactored?" *no instances of tasks getting deleted---only added. the only organizational refactor was a promotion from eng to manager, so less confict there.*
+* What does a branch/merge conflict look like in a running organization? *didn't see as much organizational conflict---usually around the details/order of executing tasks.*
+* How does leadership/expertise come into play? A Tech Lead leads a team of engineers, but does Foundry help in determining who the Tech Lead should be? 
+* How much did each of the Flash Organizations cost in terms of human labor? How would this compare to hiring a small agency to solve the problem? *EMS = $46,191, True Story = $6,650, Enterprise=$36,604*
 
 # Notes
 * Current crowd workflows can't handle complex and open-ended goals, like
@@ -42,9 +42,9 @@ groups to pursue complex open ended goals
   panel.
 * Evaluated system with three cases:
   * EMS Trauma Report - used the crowd to create a prototype mobile and web
-  application for METs to report trauma injuries from an ambulance en route to
+  application for EMTs to report trauma injuries from an ambulance en route to
   the hospital.
-  * True Stroy - used the crowd to design, manufacture and playtest a
+  * True Story - used the crowd to design, manufacture and playtest a
   storytelling card game and an accompanying mobile app
   * Enterprise Workshop Planning Portal - used the crowd to create an
   enterprise web portal to administer client workshops
@@ -55,6 +55,7 @@ structure (566 over 6 weeks).
 * Organizations used rehiring functionality to rehire members for new tasks -
 reduces amount of onboarding
 * Challenge: skill fit of workers were unreliable - quality hiring was an issue
+* Qualitative feedback from workers: 1) liked structure---worked with contractor work habits, 2) disliked time limits, 3) wanted to know when work was coming down the pipeline, when to be available, etc.
 
 
 # 3 Takeaways
@@ -65,15 +66,21 @@ reduces amount of onboarding
 # Things that went unanswered
 * How are these real world deployments more complex than building a mobile app (flash teams)?
 * Did personality / working style of individuals affect the quality / speed of
-work?
-* How did workers react to the strict hierarchy?
+work? *It does play a factor, but isn't explored as much in this paper. Future work is looking at creating more effective teams with time*
+* How did workers react to the strict hierarchy? *One interesting thing that happened is a bunch of (re)organization happened in Slack, and researchers would have to remind workers to go update structure in Foundry. We see this in Orchestra as well.*
 
 # Questions for B12 to ponder
 * What did we learn from our experience with experts in Orchestra that aligns
-with the learnings from this paper? What doesn't align?
-* What techniques from Foundry can we adapt and use in Orchestra?
+with the learnings from this paper? What doesn't align? *volume of work, knowing when it's coming. frustrations around tasks going away too quickly.*
+* What techniques from Foundry can we adapt and use in Orchestra? *our workflows should be more adaptive to customer input (e.g., single-page vs. multi-page website). Foundry has better support for finer-granularity tasks. Ran into issues with task scope being all over the place, but erring toward being more specific.*
 * Do we have (will we have) tasks that require Flash Organizations? What might
 they be?
+
+# Interesting aspects of the discussion
+* The fast hiring, despite needing more improvements for hiring quality, 
+
+
+
 
 # Other references
 [Flash Organization slides](http://hci.stanford.edu/publications/2017/flashorgs/chi2017-flashorgs-final.pdf)
