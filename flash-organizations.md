@@ -1,7 +1,7 @@
 # Reading
 Fellow B12er [Daniela Retelny](http://danielaretelny.com/)'s final chapter of her thesis is on [Flash Organizations](http://hci.stanford.edu/publications/2017/flashorgs/flash-orgs-chi-2017.pdf). We read her and her collaborators' CHI paper on the topic.
 
-# Questions I have going in
+# Questions I have going in (answers in italics)
 * How much structure comes from the initial scaffold laid down by the person forming the organization, and how much comes from forks/teams? *a lot changed---566 branches, lots of help from hired team leads*
 * How much fluidity in membership does this model see vs. traditional organizations and vs. Flash Teams? *way more churn than traditional organizations---not necessarily a benefit for a company, but good for a project. Would be cool to see hybrid organization or restructured organization from internal company team members.*
 * How does promotion work? Is there a notion of demotion? What does it look like when the task you are working on gets "refactored?" *no instances of tasks getting deleted---only added. the only organizational refactor was a promotion from eng to manager, so less confict there.*
@@ -63,13 +63,13 @@ reduces amount of onboarding
 * Organizational change (hierarchical structure, roles, new tasks, task changes) can be proposed by anyone like a Pull Request on GitHub, and are reviewed by the leader of the team that the submitter is on. Reviewed changes/branches can be merged into the master organization, which results in new hiring, etc.
 * In three applications (an EMS Android app, an actually manufactured/crowdfunded card game, an enterprise workshop web application), a leader used Flash Organizations to accomplish their goal satisfactorily in six weeks!
 
-# Things that went unanswered
+# Things that went unanswered (answers in italics)
 * How are these real world deployments more complex than building a mobile app (flash teams)?
 * Did personality / working style of individuals affect the quality / speed of
 work? *It does play a factor, but isn't explored as much in this paper. Future work is looking at creating more effective teams with time*
 * How did workers react to the strict hierarchy? *One interesting thing that happened is a bunch of (re)organization happened in Slack, and researchers would have to remind workers to go update structure in Foundry. We see this in Orchestra as well.*
 
-# Questions for B12 to ponder
+# Questions for B12 to ponder (answers in italics)
 * What did we learn from our experience with experts in Orchestra that aligns
 with the learnings from this paper? What doesn't align? *volume of work, knowing when it's coming. frustrations around tasks going away too quickly.*
 * What techniques from Foundry can we adapt and use in Orchestra? *our workflows should be more adaptive to customer input (e.g., single-page vs. multi-page website). Foundry has better support for finer-granularity tasks. Ran into issues with task scope being all over the place, but erring toward being more specific.*
