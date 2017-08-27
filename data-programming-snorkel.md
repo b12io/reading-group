@@ -1,4 +1,4 @@
-# Reading
+# Reading: Data Programming with DDLite/Snorkel
 * [Data Programming with DDLite: Putting Humans in a Different Part of the Loop](http://cs.stanford.edu/people/chrismre/papers/DDL_HILDA_2016.pdf)
 * (The [Snorkel](https://hazyresearch.github.io/snorkel/) project used to be called DDLite.)
 
