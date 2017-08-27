@@ -15,7 +15,11 @@
 
 
 # Things that went unanswered
-*
+* Why labels instead of features? Currently they lose data by enforcing binary/terenary labels.
+* What if they also used labels as features for final model? Improve model accuracy?
+* Stronger models than logistic regressions might get better feature interaction.
+* Why not use GAL to aggregate labels? I guess because there's hand-labeled data whereas GAL has no ground truth?
+
 
 # Questions for B12 to ponder
 * 
