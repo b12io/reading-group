@@ -1,6 +1,6 @@
 # Reading
 * [Data Programming with DDLite: Putting Humans in a Different Part of the Loop](http://cs.stanford.edu/people/chrismre/papers/DDL_HILDA_2016.pdf)
-* (The academic project [Snorkel](https://hazyresearch.github.io/snorkel/) used to be called DDLite.)
+* (The [Snorkel](https://hazyresearch.github.io/snorkel/) project used to be called DDLite.)
 
 
 # 3 Takeaways
