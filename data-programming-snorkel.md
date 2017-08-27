@@ -15,6 +15,7 @@
 
 
 # Things that went unanswered
+* More broadly, can't this be used to generate training data for any classifier, even if you're training it w/ traditional feature engineering, etc.? Is the problem that your features and your labels will be too correlated?
 * Why labels instead of features? Currently they lose data by enforcing binary/terenary labels.
 * What if they also used labels as features for final model? Improve model accuracy?
 * Stronger models than logistic regressions might get better feature interaction.
