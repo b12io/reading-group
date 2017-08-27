@@ -19,7 +19,7 @@
 * The rules are 2-10-line Python functions. For example, if training an email spam classifier, one labeling function might return a 1 if words like `viagra` appear in the text, or a 0 (no decision) otherwise.
 * The system asks the labeling function-writer to hand-label some data, and shows the writer statistics on each function they write. *Coverage* is the number of data points a function emits -1/1 on. Two forms of *accuracy* report how accurately the rule performs on the labeled data. *Conflict* indicates how frequently two rules that emit -1/1 disagree with one-another.
 * This process is iterative. At any step, a labeling function writers looks at the coverage/accuracy/conflict of their rules and decides to fix coverage/accuracy issues in a rule or write more rules.
-* An interesting area of future work is which examples to show labeling function writers to motivate them to improve their rules. Do you show unlabeled data? Conficting data? Hypothetical new rules that you automatically detected?
+* An interesting area of future work is in deciding which examples to show labeling function writers to motivate them to improve their rules. Do you show unlabeled data? Conficting data? Hypothetical new rules that you automatically detected?
 
 
 # Questions I have coming out
