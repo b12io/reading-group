@@ -5,8 +5,7 @@
 # 3 Takeaways
 * You can provide very rudimentary rubrics (e.g., "is the visual hierarchy is off?") to novice crowd workers and have them provide feedback that designers rate equally well as experts.
 * Both novice and expert feedback improves with rubrics (from the perspective of the person getting feedback), but novice feedback ratings improve way more than expert ones.
-* Experts still provide better justification for why they are giving certain feedback. Better justification appears to result in more helpful feedback.
-* Writing styles also affect the perceived helpfulness, which rubrics help with.
+* Experts still provide better justification for why they are giving certain feedback. Better justification appears to result in more helpful feedback. Writing styles also affect the perceived helpfulness, which rubrics help with.
 
 # Questions I have going in
 * How can we improve the quality of feedback given by novices?
