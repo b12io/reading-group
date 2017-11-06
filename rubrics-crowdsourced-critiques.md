@@ -3,46 +3,43 @@
 
 
 # 3 Takeaways
-(marcua rough notes)
-* Design rubrics help everyone
-* Help novices more than experts
-* Experts still provide better justification
-(paopow takeaways on top of marcau's)
-* Better justification => more helpful feedback
-* Writing styles affects the perceived helpfulness
+* You can provide very rudimentary rubrics (e.g., "is the visual hierarchy is off?") to novice crowd workers and have them provide feedback that designers rate equally well as experts.
+* Both novice and expert feedback improves with rubrics (from the perspective of the person getting feedback), but novice feedback ratings improve way more than expert ones.
+* Experts still provide better justification for why they are giving certain feedback. Better justification appears to result in more helpful feedback.
+* Writing styles also affect the perceived helpfulness, which rubrics help with.
 
 # Questions I have going in
 * How can we improve the quality of feedback given by novices?
-* What are the attributes of helpful feedbacks? How can we ensure the feedbacks of certain quality?
+* What are the attributes of helpful feedback? How can we ensure feedback of a certain quality?
 
 # Overall notes
-* Helpful feedbacks are positive, specific and justifiable.
+* Helpful feedback is positive, specific, and justifiable.
 * Measures of feedback quality
   - Rating by feedback receivers
   - Rating of revised artifacts
   - Contrasting with feedback from experts
-* 2x2 experiment
+* 2x2 between subjects experiment
   - Independent variables: expertise (expert, novice) and rubrics (rubric, no rubric)
   - Dependent variables: feedback ratings of the students who received feedbacks
   - Covariants: student raters' design experience and vocabularly richness
 * Active sentences ("Why don't you increase the constrast?") are rated as more helpful than non-active statement ("The constrast is low.")
-* Experts provide feedbacks with clearer justifications.
-* Repeated multiple feedbacks help with prioritization
+* Experts provide feedback with clearer justifications.
+* Repeated multiple feedback helps with prioritization.
 
 # Questions I have coming out
-* How do we ensure that the generated feedbacks are good feedback?
+* How do we ensure that the generated feedback is good?
 * How do we build good design rubrics?
 * Could _bad_ rubrics harm the feedback?
-* If gathering feedbacks from multiple sources is helpful, how can we scalably achieve it?
-* How does the perceived helpfulness correlate with improvement in design?
-* How much does the perceived helpfulness depend on personal traits of the receiver?
-* How can automation help with feedback providing?
+* If gathering feedback from multiple sources is helpful, how can we scalably do that?
+* How does perceived helpfulness correlate with improvement in design?
+* How much does the perceived helpfulness depend on personal traits of the recipient?
+* How can automation help in providing feedback?
 
 # Questions for B12 to ponder
-* We should provide rubrics to our design reviewers
-* We should provide rubrics to our customers
-* We should support customers in providing helpful rationale for their feedbacks
-* Experts should be able to communicate justification of their solutions to the customers
+* We should provide rubrics to our design reviewers.
+* We should provide rubrics to our customers.
+* We should support customers in providing helpful rationale for their feedback.
+* Experts should be able to communicate justification of their solutions to the customers.
 * Our designer-powered recommendations are a form of design critique as well. What can we learn from that?
 * CrowdCrit provides feedback with visual annotations---until we have that, how will our results be different?
 * Can we open our dataset to one of these researchers?
