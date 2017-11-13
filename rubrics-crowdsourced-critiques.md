@@ -2,7 +2,7 @@
 * [Almost an Expert: The Effects of Rubrics and Expertise on Perceived Value of Crowdsourced Design Critiques](http://www.cs.cmu.edu/~spdow/files/CrowdCrit-rubrics-cscw2016.pdf)
 
 # 3 Takeaways
-* You can provide very rudimentary rubrics (e.g., "is the visual hierarchy is off?") to novice crowd workers and have them provide feedback that designers rate equally well as experts.
+* You can provide very rudimentary rubrics (e.g., "Is the visual hierarchy off?") to novice crowd workers and have them provide feedback that designers rate equally well as experts.
 * Both novice and expert feedback improves with rubrics (from the perspective of the person getting feedback), but novice feedback ratings improve way more than expert ones.
 * Experts still provide better justification for why they are giving certain feedback. Better justification appears to result in more helpful feedback. Writing styles also affect the perceived helpfulness, which rubrics help with.
 
