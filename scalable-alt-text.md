@@ -65,6 +65,7 @@
 ## Questions for B12
 * Could we use something like this to generate alt-text for customer images on their websites?
 * In general, how can we be more sensitive to accessibility issues on our and our customers websites?
+* Given how well coding structured responses from an unstructured conversational process works, how well would it work for internal processes we have, like design review or customer website feedback?
 ## Other references
 * [VizWiz](http://up.csail.mit.edu/other-pubs/vizwiz.pdf)
 * [CaptionBot](https://www.captionbot.ai/)
