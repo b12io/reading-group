@@ -1,4 +1,4 @@
-# Reading: Toward Scalable Social Alt Text: Conversational Crowdsourcing as a Tool for Refining Vision-to-Language Technology for the Blind
+# Toward Scalable Social Alt Text: Conversational Crowdsourcing as a Tool for Refining Vision-to-Language Technology for the Blind
 [Paper link](https://aaai.org/ocs/index.php/HCOMP/HCOMP17/paper/viewFile/15920/15272)
 ## Main Takeaways
 * Captioning is an important tool for Blind and Visually Impaired (BVI) users to interact with images on the web, particularly on social networks where posts are illustrated with accompanying imagery.
