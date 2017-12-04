@@ -1,5 +1,5 @@
 # Mining Precision Interfaces From Query Logs
-[Paper link]()
+[Paper link](https://arxiv.org/abs/1712.00078)
 
 # Main Takeaways
 * The authors present a tool to automatically generate task-specific interactive interfaces from query logs.
@@ -17,6 +17,9 @@
 * Must bound the complexity of structural changes and provide simple mechanisms to specify the types of changes that are meaningful - arbitrarily complex interfaces are not useful
 * Three logical steps: 1. Representation Canonicalizer, 2. Interaction Miner and Distiller, and 3. Interaction Mapper.
 * They do not assume semantic understanding of the queries beyond near-universal features like primitive data types.
+* Modeling queries: need to be able to create parse tree for queries, need mapping of terminal nodes to primitive data types and need rules for canonicalizing trees.
+* Interactions as query differences: don't fully materialize diffs table because you can push down filters from PILang.
+* Interfaces - composed of widget. Each widget consists of a domain of allowable values (e.g. integers, strings, column names) and a cost function for how "good" the widget is for a given domain.
 * Ranking interfaces - some scoring function so we select the “best” interfaces
 * Interface Mapper
   * Goal: generate a set of interfaces that can express the queries in this graph
