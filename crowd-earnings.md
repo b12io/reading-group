@@ -8,9 +8,25 @@
 * Interestingly, the average requester is paying $11.58/hr. A small number of requesters bring the average/median down with large quantities of low-paying tasks.
 
 # Questions Going In
+* What income expectations do Turkers have?
+* How do Mechanical Turk wages differ by region and task type?
+* How much "task search" overhead can we automate away to maximize Turker wages?
 
 # Raw Notes
+This is a descriptive statistics-heavy paper, so the notes are mostly other interesting statistics that I saw
+* Avg tasks/Turker: 1302. Standard deviation: 4723. Max 107K!
+* Interesting technique to estimate wage and time on task. Turkers pick up tasks in batches, presumably to reduce task search overhead and get desirable tasks before they are snatched up. As a result, you can't estimate time on task by measuring the wallclock difference between task end and task start. Instead, they search for task pickup/submission intervals that are no more than a minute apart. If two adjacent pickup/submission times are within a minute of one-another, you expand the interval, similar to [Agglomerative clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering). You then assume workers spent the time from first pickup to final submission in an expanded interval is all work time.
+* 61% of workers parallelize task pickup using the technique in the previous bullet point.
+* Ranking of overhead/unpaid work, from things that take up most time to least time: 1) Turkers start but don't finish 13% of tasks, leaving them unpaid, 2) Task search time (hard for me to understand the estimate), 3) Requesters reject 0.7% of tasks.
+* Several analyses of tasks that increase effective hourly pay:
+  * Non-obvious result: tasks that have a higher per-task pay rate result in higher hourly wages per Turker. One reason for this: perhaps tasks that pay more are more likely to have been thought out/estimated by requesters as having a fair hourly wage, whereas the hourly effective pay rate of low-paying tasks isn't considered by requesters.
+  * Not all tasks with qualifications have higher effective hourly rates, but certain classes of qualification ("total approved tasks" and "question editor") do.
+  * Tasks on particular topics (e.g., video evaluation) have higher effective hourly rates.
 
 # Questions Coming Out
+* In Figure 1, it looks like the overall task volume goes down near the end of the study period. Is that because the Chrome plugin became less popular, or are Turkers leaving Mechanical Turk?
+* Do Turkers who don't use this plugin have a lower hourly wage by virtue of being less connected? That would be sad but not surprising.
 
 # Questions for B12 to ponder
+* B12 pays experts an order of magnitude more than these rates. Still, what can we learn from this paper?
+* How can we reduce task search overhead for workers beyond [StaffBot](http://orchestra.readthedocs.io/en/stable/bots.html#staffbot)?
