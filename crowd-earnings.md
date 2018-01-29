@@ -5,7 +5,7 @@
 * The authors looked at traces from 2676 workers across 3.8M HITs (tasks) over a period of slightly more than 2 years (Set 2014-Jan 2017). The traces were from a Chrome plugin that workers used to track their hourly pay rate, among other things.
 * Average hourly pay was $3.13/hr, and the median was $1.77/hr. 4% of workers earn >= $7.25/hr (USA minimum wage).
 * The authors quantify various forms of unpaid work, including looking for new tasks, starting but not completing tasks, and having their work rejected. If you remove this unpaid work, the mean goes to $6.19/hr, and the median goes to $3.18/hr.
-* Interestingly, the average requester pays $11.58/hr. A small number of requesters bring the average/median down with large quantities of low-paying tasks.
+* Interestingly, the average requester pays $11.58/hr (median is $4.57). A small number of requesters bring the average/median down with large quantities of low-paying tasks.
 
 # Questions Going In
 * What income expectations do Turkers have?
@@ -28,5 +28,11 @@ This is a descriptive statistics-heavy paper, so the notes are mostly other inte
 * Do Turkers who don't use this plugin have a lower hourly wage by virtue of being less connected? That would be sad but not surprising.
 
 # Questions for B12 to ponder
-* B12 pays experts an order of magnitude more than these rates. Still, what can we learn from this paper?
+* B12 pays experts an order of magnitude more than these rates. Still, what can we learn from this paper? Are there quick questions we ask experts or interactions we have that go unpaid?
 * How can we reduce task search overhead for workers beyond [StaffBot](http://orchestra.readthedocs.io/en/stable/bots.html#staffbot)?
+* StaffBot only offers a task description when it reaches out to experts. What sort of a peak into the deeper task can we offer experts?
+
+# Notes for the authors
+* Lots of researchers pay bonus post-hoc. How do bonus payments factor in? Example: during the period studied, DHaas created a quarter million tasks where lion's share of the pay was in bonuses for variable work.
+* Mean/median are reported twice in intro (with and without unpaid work), but are reported in flipped order
+* It feels like there are qualitative buckets of turkers: 1) try it once, 2) hobbyists, 3) use it a lot, 4) sole profession. The statistics pooled across all of these groups are less interesting than the statistics per-group. A fun to investigate section would include a table with key metrics broken down into these groups. Paper #2 :).
