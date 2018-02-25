@@ -9,6 +9,7 @@
 # Questions Going In
 * What is the perceived “power status” of an anonymous feedback source?
 * Does positive feedback reception lead to better work outcomes?
+* How will the authors evaluate work quality? Will the tasks be very different from our tasks at B12?
 
 # Notes
 * Conducted a 2x3 factorial between-subjects experiment
@@ -32,8 +33,10 @@
 * Does the tone of the actual critiques also effect feedback perception? (e.g. “Good work so far! The piece is boring…” vs. “Good work so far! The piece could use more enthusiasm…”)
 * Can too much positive-affective language degrade outcomes?
 * Is power status as significant as perceived expertise in different types of relationships?
+* What about negative-affective language? Some feedback statements can come across as pretty harsh, does that affect quality/perceptions of workers?
 
 # Questions for B12
 * How do our design experts perceive the expertise of our design reviewers?
 * How do our design experts perceive the feedback of our customers? Many customers approach us because they do not necessarily have expertise in web design.
 * Can we improve how we communicate customer/reviewer feedback to design experts with positive-affective language and/or anonymity?
+* The paper mentioned github as an important platform for online feedback. What can we learn about how we do code review from this paper?
