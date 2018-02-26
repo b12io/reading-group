@@ -34,6 +34,7 @@
 * Can too much positive-affective language degrade outcomes?
 * Is power status as significant as perceived expertise in different types of relationships?
 * What about negative-affective language? Some feedback statements can come across as pretty harsh, does that affect quality/perceptions of workers?
+* How does this work in the long-term? Example: giving feedback to B12 designers for weeks on end, or code reviews we do every day? What if you "weaved positivity throughout sentences?"
 
 # Questions for B12
 * How do our design experts perceive the expertise of our design reviewers?
