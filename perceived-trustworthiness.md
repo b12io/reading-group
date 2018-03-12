@@ -5,6 +5,9 @@ Self-Disclosure and Perceived Trustworthiness of Airbnb Host Profiles by Xiao Ma
 * How do you measure perceived trustworthiness?
 
 # Takeaways
+* Host profiles disclose different types of information, with the hosting situation (onsite vs. remote) influencing the type.
+* The most popular topics correlate with the topics that have the highest perceived trustworthiness.
+* Higher perceived trustworthiness somewhat influenced the host choice decision, based on a study asking Amazon Mechnical Turk (AMT) workers which host they "feel more comfortable staying with".
 
 # Notes
 * _trustworthiness vs trust_: trustworthiness is an attribute of the trustee while trust is exhibited by a trustor.
@@ -41,15 +44,16 @@ Self-Disclosure and Perceived Trustworthiness of Airbnb Host Profiles by Xiao Ma
   * The number of topics was found to contribute to perceived trustworthiness.
   * Topic and perceived trustworthiness: the authors looked at one-topic (117), two-topic (231) and three-topic (239) profiles and whether the perceived trustworthiness scores were affected specific topic combinations, referred to as "stragegy".
     * _Hospitality_ was by far the most successful single-topic strategy.
-    * OW and HO were the most popular two-topic strategies.
+    * _Origin or Residence_ / _Work or Education_ and _Hospitality_ - _Origin or Residence_ were the most popular two-topic strategies.
     * The most popular topic combinations also had the highest perceived trustworthiness, supporting the second hypothesis.
 * Study 3 - From perception to choice
   * This study looks at how perception of trustworthiness leads to differences in host choice.
   * Hypothesis: higher perceived trustworthiness scores for text-based host profiles predict the likelihood of guest choice.
-  * Study procedure: create pairs of low score / high score host profiles with roughly the same length. The pair is shown to a respondent and she is asked which host she feels more comfortable staying with. Each respondent was asked to evaluate 50 pairs. 3 pairs were repeated to evaluate the consistency of the worker's answers. After cleaning / filtering, there are responses from 355 workers (16,685 pairs).
+  * Study procedure: create pairs of low score / high score host profiles with roughly the same length. The pair is shown to a respondent and she is asked which host she feels more comfortable staying with. The question of comfort was used to try to focus on trustworthiness, vs other attributes which influence the decision such as location. Each respondent was asked to evaluate 50 pairs. 3 pairs were repeated to evaluate the consistency of the worker's answers. After cleaning / filtering, there are responses from 355 workers (16,685 pairs).
   * Used Bradley-Terry model to evaluate if preceived trustworthiness accurately predicts choice.
-  
 
 # Things that went unanswered
 
 # Questions / Applications for B12
+* Can we use a similar study process to help our customers write copy? Identify what the psychological contract is between our customer and theirs and develop an iterative process for writing copy that re-enforces that contract.
+* Will our customers one day be reading designer profiles, where we could apply the learnings from this paper?
