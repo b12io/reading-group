@@ -3,6 +3,7 @@ We read papers on topics related to algorithmic design of websites and
 crowdsourcing.
 
 # Past Papers
+* April 30, 2018: [Paragon: An Online Gallery for Enhancing Design Feedback with Visual Examples](paragon-enhancing-design-feedback-with-visual-examples.md)
 * April 9, 2018: [In Search of the Dream Team](dream-team-bandits.md)
 * March 12, 2018: [Self-Disclosure and Perceived Trustworthiness of Airbnb Host Profiles](perceived-trustworthiness.md)
 * December 4, 2017: [Mining Precision Interfaces From Query Logs](precision-interfaces.md)
