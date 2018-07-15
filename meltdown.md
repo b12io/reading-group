@@ -10,7 +10,7 @@
 
 
 # Overall notes
-[https://adriancolyer.files.wordpress.com/2018/01/meltdown-listing-2.jpeg?w=480&zoom=2](This picture explains a lot)
+![This picture explains a lot](https://adriancolyer.files.wordpress.com/2018/01/meltdown-listing-2.jpeg?w=480&zoom=2)
 
 # Questions I have coming out
 
