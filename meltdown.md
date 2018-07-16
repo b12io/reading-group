@@ -15,7 +15,7 @@
 * Section 2 is a great recap (or introduction) to computer architecture/organization classes. Each program has access to virtual memory addresses, which are mapped to physical memory by way of translation tables that are swapped out at each context (program) switch. The kernel's memory (kernel space) is also accessible in each virtual address space to make process <-> kernel communication more efficient. In practice on Linux and OS X, the entire physical memory is accessible in the kernel's memory, though through something called KASLR it's randomized on each reboot. Programs normally can't access kernel space without permission, but through some cache/side-channel tricks, they will be able to surmise what's in kernel space, and by extension what's in the rest of physical memory.
 * The way the process is able to determine the contents of a page it can't access is via a [flush+reload](https://eprint.iacr.org/2013/448.pdf) attack, which is written about in a different paper. A screenshot from the paper helps explain how it works. Basically, if your program says "get rid of this memory location" and then tries to access the location again after some time, if it takes a short amount of time to pull the data up again, then it's likely been read (into a shared cache) by some other program:
 ![flush+reload](https://marcua.keybase.pub/meltdown-screenshots/flush-reload.png)
-* To show how a read based on some data you're not allowed to access is possible with flush+reload, the authors provide a toy example, which I've annotated:
+* To show how a read based on some data you're not allowed to access is possible with flush+reload, the authors provide a toy example, which I've annotated. Assuming `data` is a byte (256 possible values), and given that memory pages are 4 KB, I can create an array of size 1MB (256\*4096). After reading array element `data * 4096`, I can flush+reload pages to determine which page was read, corresponding to the value of `data:
 ![flush+reload](https://marcua.keybase.pub/meltdown-screenshots/toy-example.png)
 
 
@@ -23,7 +23,7 @@
 ![This picture explains a lot](https://adriancolyer.files.wordpress.com/2018/01/meltdown-listing-2.jpeg?w=200&zoom=2)
 
 # Questions I have coming out
-* Does 503 KB/second mean the exploit is too slow in practice? At 503 KB/second, it would take (1024*1024*1024/(503*1024))/3600 =~ 0.58 hours to read 1 GB of memory. That means it would take several days to copy memory from a modern server, which doesn't seem unreasonable. You'd probably hit some unencrypted passwords before then :).
+* Does 503 KB/second mean the exploit is too slow in practice? At 503 KB/second, it would take (1024\*1024\*1024\/(503\*1024))\/3600 \=\~ 0.58 hours to read 1 GB of memory. That means it would take several days to copy memory from a modern server, which doesn't seem unreasonable. You'd probably hit some unencrypted passwords before then :).
 
 # Questions for B12 to ponder
 * Are we patched :)? I'm pretty sure we are by virtue of AWS upgrading all of the host kernels on our virtualized instances.
