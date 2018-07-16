@@ -17,10 +17,12 @@
 ![flush+reload](https://marcua.keybase.pub/meltdown-screenshots/flush-reload.png)
 * To show how a read based on some data you're not allowed to access is possible with flush+reload, the authors provide a toy example, which I've annotated. Assuming `data` is a byte (256 possible values), and given that memory pages are 4 KB, I can create an array of size 1MB (256\*4096). After reading array element `data * 4096`, I can flush+reload pages to determine which page was read, corresponding to the value of `data:
 ![flush+reload](https://marcua.keybase.pub/meltdown-screenshots/toy-example.png)
-
-
-
-![This picture explains a lot](https://adriancolyer.files.wordpress.com/2018/01/meltdown-listing-2.jpeg?w=200&zoom=2)
+* But how can you hit an exception and not crash your program? The authors offer three approaches:
+  1) fork your program and let your child run the exceptional code (crashing) as well as the out-of-order read. Then run flush+reload to see what your child read.
+  2) create a signal-based exception handler that tells the program to ignore the crash/segmentation fault.
+  3) suppress the exception through transactional memory, or some tricks that the Spectre attack utilizes that I didn't understand.
+* Section 5 explains the 5-line assembly inner loop. I've annoted the assembly to understand it better. Essentially, outside of this assembly, you're looping over every byte of the kernel. For each byte, you run the code in the annotated screenshot below, trying to access a mapped part of your probe array. After each byte, you run flush+reload to determine what the value at that kernel memory byte was. Sounds tiring, except it's done by a computer :):
+![annotated assembly](https://marcua.keybase.pub/meltdown-screenshots/annotated-assembly.png)
 
 # Questions I have coming out
 * Does 503 KB/second mean the exploit is too slow in practice? At 503 KB/second, it would take (1024\*1024\*1024\/(503\*1024))\/3600 \=\~ 0.58 hours to read 1 GB of memory. That means it would take several days to copy memory from a modern server, which doesn't seem unreasonable. You'd probably hit some unencrypted passwords before then :).
