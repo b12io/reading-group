@@ -9,13 +9,15 @@
 * Luckily, and unlike the related Spectre attack, Meltdown can largely be avoided through a countermeasure called KAISER that was developed a year earlier for the Linux kernel. At this point, the major operating systems all have similar patches available to protect against Meltdown, albeit by incurring a performance penalty.
 
 # Questions I have going in
-* What is the difference between out-of-order execution (apparently what Meltdown exploits) and speculative execution (apparently what Spectre exploits).
+* What is the difference between out-of-order execution (apparently what Meltdown exploits) and speculative execution (apparently what Spectre exploits)?
 
 # Overall notes
+* Section 2 is a great recap (or introduction) to computer architecture/organization classes. Each program has access to virtual memory addresses, which are mapped to physical memory by way of translation tables that are swapped out at each context (program) switch. The kernel's memory (kernel space) is also accessible in each virtual address space to make process <-> kernel communication more efficient. In practice on Linux and OS X, the entire physical memory is accessible in the kernel's memory, though through something called KASLR it's randomized on each reboot. Programs normally can't access kernel space without permission, but through some cache/side-channel tricks, they will be able to surmise what's in kernel space, and by extension what's in the rest of physical memory.
+
 ![This picture explains a lot](https://adriancolyer.files.wordpress.com/2018/01/meltdown-listing-2.jpeg?w=200&zoom=2)
 
 # Questions I have coming out
-
+* Does 503 KB/second mean the exploit is too slow in practice? At 503 KB/second, it would take (1024*1024*1024/(503*1024))/3600 =~ 0.58 hours to read 1 GB of memory. That means it would take several days to copy memory from a modern server, which doesn't seem unreasonable. You'd probably hit some unencrypted passwords before then :).
 
 # Questions for B12 to ponder
 * Are we patched? :)
