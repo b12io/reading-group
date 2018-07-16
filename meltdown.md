@@ -30,6 +30,7 @@
 
 # Questions for B12 to ponder
 * Are we patched :)? I'm pretty sure we are by virtue of AWS upgrading all of the host kernels on our virtualized instances.
+* What's the best way to read papers like these? My process was: 1) Read Adrian's blog post, 2) Read the paper a section at a time, 3) Annotate the figures to make sure I could explain them to myself, 4) Find a useful figure in the flush+reload paper to make sure I understood it.
 
 # Other references
 * [An article explaining the Linux kernel update that hides parts of kernel space from side-channel attacks](https://lwn.net/Articles/738975/)
