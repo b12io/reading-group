@@ -23,6 +23,7 @@
   3) suppress the exception through transactional memory, or some tricks that the Spectre attack utilizes that I didn't understand.
 * Section 5 explains the 5-line assembly inner loop. I've annoted the assembly to understand it better. Essentially, outside of this assembly, you're looping over every byte of the kernel. For each byte, you run the code in the annotated screenshot below, trying to access a mapped part of your probe array. After each byte, you run flush+reload to determine what the value at that kernel memory byte was. Sounds tiring, except it's done by a computer :):
 ![annotated assembly](https://marcua.keybase.pub/meltdown-screenshots/annotated-assembly.png)
+* You might think reading a byte at a time is slow. In fact, in Section 5.2, they explain that because flush+reload across 256 pages is the slow part, they read a bit at a time and just determine if it was a 0 or a 1 rather than flush+reloading a large probe array.
 
 # Questions I have coming out
 * Does 503 KB/second mean the exploit is too slow in practice? At 503 KB/second, it would take (1024\*1024\*1024\/(503\*1024))\/3600 \=\~ 0.58 hours to read 1 GB of memory. That means it would take several days to copy memory from a modern server, which doesn't seem unreasonable. You'd probably hit some unencrypted passwords before then :).
