@@ -36,3 +36,4 @@
 # Other references
 * [An article explaining the Linux kernel update that hides parts of kernel space from side-channel attacks](https://lwn.net/Articles/738975/)
 * [This Stackoverflow response and the summary on page 3 of the paper](https://stackoverflow.com/questions/49601910/out-of-order-execution-vs-speculative-execution) explain the difference between out-of-order execution (e.g., I read some memory that I see you'll be accessing later so it takes less time to retrieve it) and speculative execution (e.g., I suspect this branch will evaluate, so I started running the code in the branch before knowing if I'm right).
+* [The Flush+Reload paper](https://eprint.iacr.org/2013/448.pdf)
