@@ -27,6 +27,7 @@
 
 # Questions I have coming out
 * Does 503 KB/second mean the exploit is too slow in practice? At 503 KB/second, it would take (1024\*1024\*1024\/(503\*1024))\/3600 \=\~ 0.58 hours to read 1 GB of memory. That means it would take several days to copy memory from a modern server, which doesn't seem unreasonable. You'd probably hit some unencrypted passwords before then :).
+* Does this exploit work with one process checking it's own flush+reload statistics, or are there two applications, one probing and one flushing+reloading?
 
 # Questions for B12 to ponder
 * Are we patched :)? I'm pretty sure we are by virtue of AWS upgrading all of the host kernels on our virtualized instances.
