@@ -13,6 +13,8 @@
 
 # Overall notes
 * Section 2 is a great recap (or introduction) to computer architecture/organization classes. Each program has access to virtual memory addresses, which are mapped to physical memory by way of translation tables that are swapped out at each context (program) switch. The kernel's memory (kernel space) is also accessible in each virtual address space to make process <-> kernel communication more efficient. In practice on Linux and OS X, the entire physical memory is accessible in the kernel's memory, though through something called KASLR it's randomized on each reboot. Programs normally can't access kernel space without permission, but through some cache/side-channel tricks, they will be able to surmise what's in kernel space, and by extension what's in the rest of physical memory.
+* The way the process is able to determine [flush+reload](https://eprint.iacr.org/2013/448.pdf), which is written about in a different paper. A screenshot from the paper helps explain how it works:
+![flush+reload](https://marcua.keybase.pub/meltdown-screenshots/flush-reload.png)
 
 ![This picture explains a lot](https://adriancolyer.files.wordpress.com/2018/01/meltdown-listing-2.jpeg?w=200&zoom=2)
 
@@ -20,7 +22,7 @@
 * Does 503 KB/second mean the exploit is too slow in practice? At 503 KB/second, it would take (1024*1024*1024/(503*1024))/3600 =~ 0.58 hours to read 1 GB of memory. That means it would take several days to copy memory from a modern server, which doesn't seem unreasonable. You'd probably hit some unencrypted passwords before then :).
 
 # Questions for B12 to ponder
-* Are we patched? :)
+* Are we patched :)? I'm pretty sure we are by virtue of AWS upgrading all of the host kernels on our virtualized instances.
 
 # Other references
 * [An article explaining the Linux kernel update that hides parts of kernel space from side-channel attacks](https://lwn.net/Articles/738975/)
