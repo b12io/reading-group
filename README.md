@@ -3,6 +3,7 @@ We read papers on topics related to algorithmic design of websites and
 crowdsourcing.
 
 # Past Papers
+* August 27, 2018: [Spectre](spectre.md)
 * July 16, 2018: [Meltdown](meltdown.md)
 * April 30, 2018: [Paragon: An Online Gallery for Enhancing Design Feedback with Visual Examples](paragon-enhancing-design-feedback-with-visual-examples.md)
 * April 9, 2018: [In Search of the Dream Team](dream-team-bandits.md)
