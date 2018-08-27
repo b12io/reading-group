@@ -1,13 +1,21 @@
 # Reading: Spectre
 * [Paper](https://spectreattack.com/spectre.pdf)
 
+# Takeaways
+* The Spectre attack:
+  * Locates a sequence of instructions within the victim process's address space which, when executed, acts as covert channel transmitter that leaks the victim's memory or register contents
+  * Tricks the CPU into speculatively and erroneously executing this instruction sequence.
+  * Retrieves the leaked information over the covert channel.
+* The paper empirically tested the attack with two variants: exploiting conditional branches and exploiting indirect branches.
+* The two variants were tested on a variety of hardware, from Intel processors to AMD and ARM-based Samsung and Qualcomm processors found on mobile phones.
+* Some mitigation techniques for attacking using JavaScript in a browser seem relatively easy to implement and are already used by Google Chrome and WebKit (limiting access to secret data, limiting extraction from covert channels by degrading timer resolution). Mitigation techniques for native code seem heavy-weight (preventing spectulative execution for unsafe branches) or are not feasible with current processors (preventing data from entering covert channels).
+
 # Questions I have going in
 * How was spectre different from meltdown?
 * What about the attack makes it impossible to create a patch for?
 
 # Notes
 * Demonstrated attack using native code, JavaScript in a browser, and eBPF
-* At a high level, attacker locates a sequence of instructions within the victim process's address space which, when executed, acts as covert channel transmitter that leaks the victim's memory or register contents. The attacker than tricks the CPU into speculatively and erroneously executing this instruction sequence. Finally, the attacker retrieves the leaked information over the covert channel.
 * Variant 1: exploiting conditional branches
   * Attacker mistrains branch predictor to mispredict direction of a branch, allowing an attacker to read secret info stored in the program's address space
   * Ex. `if ( x < arraysize)`. Mistrains this branch by inputiing several valid values, then inputs one that is out of bounds
