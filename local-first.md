@@ -35,5 +35,6 @@ Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, Mark McGranaghan
 
 
 # Questions / Applications for B12
-- Related examples at B12, when we have multiple users editing the website at once, people rewrite each other's work. How might we make use of something like automerge to resolve this issues?
+- Related examples at B12, when we have multiple users editing the website at once, people rewrite each other's work. How might we make use of something like automerge to resolve this issues? Should we show who is working on what? Maybe, we can try lock some parts of the experience for some users?
+- Can we apply the tool like automerge to speed up the loading time?
 - How might we integrate the design of conflicts to the users?
