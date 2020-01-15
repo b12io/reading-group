@@ -3,6 +3,9 @@ We read papers on topics related to algorithmic design of websites and
 crowdsourcing.
 
 # Past Papers
+* Jan 15, 2020: [Local-First Software:
+You Own Your Data, in spite of the Cloud](local-first.md)
+* Dec 18, 2019: [Principles and Limits of Algorithms-in-the-loop Decision Making](principles-and-limits-of-algorithms-in-the-loop-decision-making.md)
 * August 27, 2018: [Spectre](spectre.md)
 * July 16, 2018: [Meltdown](meltdown.md)
 * April 30, 2018: [Paragon: An Online Gallery for Enhancing Design Feedback with Visual Examples](paragon-enhancing-design-feedback-with-visual-examples.md)
