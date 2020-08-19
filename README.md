@@ -3,6 +3,7 @@ We read papers on topics related to algorithmic design of websites and
 crowdsourcing.
 
 # Past Papers
+* August 18, 2020: [Language Models are Few-Shot Learners (The GPT-3 paper)](gpt3.md)
 * Jan 15, 2020: [Local-First Software:
 You Own Your Data, in spite of the Cloud](local-first.md)
 * Dec 18, 2019: [Principles and Limits of Algorithms-in-the-loop Decision Making](principles-and-limits-of-algorithms-in-the-loop-decision-making.md)
